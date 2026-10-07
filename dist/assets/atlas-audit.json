@@ -1,0 +1,24 @@
+{
+  "left": {
+    "vertices": 10242,
+    "triangles": 20480,
+    "max_sphere_match_distance": 0.0,
+    "parcels": 34
+  },
+  "right": {
+    "vertices": 10242,
+    "triangles": 20480,
+    "max_sphere_match_distance": 0.0,
+    "parcels": 34
+  },
+  "source_sha256": {
+    "label_lh.aparc.annot": "39b1acde9a32b4227631eb51cbcd8dff84e2138c57bf9f96d74026f2c17f1480",
+    "label_rh.aparc.annot": "6a326aed325d313e6e0d10f67630efcd8d3b8343c50d3e108e005f626614badb",
+    "lh.sphere": "fddcf0eeecc6e0f62142164f7c0ac24fda1f0be8cb653d3f037970184c5ba98f",
+    "rh.sphere": "fddcf0eeecc6e0f62142164f7c0ac24fda1f0be8cb653d3f037970184c5ba98f",
+    "mri_aseg.mgz": "b55ef817e5e5bd1a3d76d4a2305283eef16fbff199ead3d840dd4b0fa8205e48",
+    "sphere_left.gii.gz": "1047fe84e0055f40896afaba320edcc791e84f459daadc4b0002850baf8e79f3",
+    "sphere_right.gii.gz": "08899ce6022b739ceb4e5f925e947a79041fc505007c46ace3454ad02587ea6b"
+  },
+  "total_meshes": 92
+}

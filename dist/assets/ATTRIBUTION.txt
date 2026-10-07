@@ -1,0 +1,25 @@
+NeuroNav — 3D anatomical model
+
+Template anatomy, not patient-specific geometry.
+
+Cortical surfaces: FreeSurfer fsaverage5 pial left/right, distributed by Nilearn.
+Source: https://github.com/nilearn/nilearn/tree/main/nilearn/datasets/data/fsaverage5
+Documentation: https://nilearn.github.io/stable/modules/generated/nilearn.datasets.fetch_surf_fsaverage.html
+
+Segmentation: FreeSurfer fsaverage aseg.mgz, distributed by MNE testing data.
+Source: https://github.com/mne-tools/mne-testing-data/blob/master/subjects/fsaverage/mri/aseg.mgz
+
+Modified representation: converted from surface-RAS to right/superior/posterior coordinates; pial vertices rounded to 0.001 mm. Segmented structures extracted with marching cubes (step 1 voxel for deep nuclei and brainstem; step 2 voxels for cerebellar surfaces) after Gaussian smoothing (sigma 0.65 voxels). These derived meshes are not original FreeSurfer files. They are not registered to an individual patient. Broad coloring is an educational interface overlay, not a validated functional or vascular atlas.
+
+FreeSurfer data license: FREESURFER-LICENSE.txt in this directory.
+Nilearn license: NILEARN-LICENSE.txt in this directory.
+Three.js r170 (MIT): ../vendor/THREE-LICENSE.txt
+
+No endorsement by FreeSurfer, MGH, Nilearn, or MNE is implied.
+
+DETAILED ATLAS UPDATE
+Cortical annotation: bilateral aparc.annot from MNE fsaverage, Desikan–Killiany atlas.
+Source: https://github.com/mne-tools/mne-testing-data/tree/master/subjects/fsaverage/label
+Labels transferred through exact spherical vertex correspondence (maximum error 0 on both hemispheres), verified against full-resolution fsaverage sphere surfaces. Each low-resolution triangle is assigned by majority vertex label; three-way ties use its first vertex. Boundary geometry is a display approximation. Normal vectors preserve the original hemisphere surface shading.
+Additional aseg structures are extracted at one-voxel marching-cubes resolution after Gaussian smoothing. No custom nuclei or tract boundaries were invented. Source-file hashes and correspondence statistics are recorded in atlas-audit.json.
+Clinical text is an original educational summary with linked clinical sources. Scoring and overlay rules are author-defined and unvalidated. No textbook figures or text are reproduced.
